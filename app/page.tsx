@@ -5,7 +5,7 @@ export default function Home() {
         <h1>P2 Solar Mini-Grid: Design Optimization</h1>
 
         {/* Brief Project Description */}
-        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Description:</h2>
           <p className="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
@@ -13,19 +13,19 @@ export default function Home() {
         </section>
 
         {/* Team Members and Roles */}
-        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Team Members and Roles:</h2>
           <ul className="list-inside list-disc mb-4">
-            <li>Jessica - Lorem ipsum dolor sit amet</li>
-            <li>Earth - Full Stack Engineer</li>
-            <li>Pranav - Lorem ipsum dolor sit amet</li>
-            <li>Joseph - Lorem ipsum dolor sit amet</li>
-            <li>Tyler - Lorem ipsum dolor sit amet</li>
+            <li>Jessica - 4 years of professional experience in data analytics and data engineering.</li>
+            <li>Earth - Full Stack Engineer.</li>
+            <li>Pranav - 2 years FT experience.</li>
+            <li>Joseph - 2 and a half years experience as a software developer.</li>
+            <li>Tyler - 5 years of experience in data science.</li>
           </ul>
         </section>
 
         {/* Project Goal */}
-        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Project Goal:</h2>
           <p className="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi
@@ -33,7 +33,7 @@ export default function Home() {
         </section>
 
         {/* Lighthouse Scores */}
-        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Lighthouse Scores Desktop:</h2>
             <ul className="list-inside list-decimal">
               <li>Performance: 94</li>
