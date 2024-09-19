@@ -1,14 +1,14 @@
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1>P2 Solar Mini-Grid: Design Optimization</h1>
 
         {/* Brief Project Description */}
-        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
+        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick w-full">
           <h2 className="font-bold">Description:</h2>
           <p className="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+          The state-of-the-art in mini-grid design is poor. Most of it runs on rules of thumb, and the few software tools that exist are notoriously oversimplified and return useless results. This leads to over- and under-sized mini-grids that are unprofitable and/or don't provide reliable power to communities. Renewvia, like many companies, has begun developing small, Excel-based software tools to simulate mini-grid performance. A talented software developer with an interest in machine learning could build on the simulation work already done to test different convex optimization tools to create an automatic mini-grid design tool. Users would input the location of the mini-grid, as well as information about potential customers and financing. The model would, ideally, output a mini-grid design optimized for 20-year IRR, including a shopping list and financial model. We built a proof-of-concept last year that used a genetic algorithm to optimize design that produced promising results. Refining and expanding that tool could finally bring engineering maturity to the mini-grid industry.
           </p>
         </section>
 
@@ -28,19 +28,21 @@ export default function Home() {
         <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Project Goal:</h2>
           <p className="mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi
+            Improve the design optimization of mini-grids by creating an automatic mini-grid design tool that outputs a mini-grid design optimized for 20-year IRR, including a shopping list and financial model.
           </p>
         </section>
 
         {/* Lighthouse Scores */}
         <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Lighthouse Scores Desktop:</h2>
-            <ul className="list-inside list-decimal">
-              <li>Performance: 94</li>
-              <li>Accessibility: 100</li>
-              <li>Best Practices: 96</li>
-              <li>SEO: 100</li>
-            </ul>
+          <ul className="list-inside list-decimal">
+            <li>Performance: 94</li>
+            <li>Accessibility: 100</li>
+            <li>Best Practices: 96</li>
+            <li>SEO: 100</li>
+          </ul>
+        </section>
+        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Lighthouse Scores Mobile:</h2>
           <ul className="list-inside list-decimal">
             <li>Performance: 77</li>
@@ -49,17 +51,6 @@ export default function Home() {
             <li>SEO: 100</li>
           </ul>
         </section>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Find the repo
-          </a>
-        </div>
       </main>
     </div>
   );
