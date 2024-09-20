@@ -21,6 +21,7 @@ export default function Home() {
             <li>Pranav - 2 years FT experience.</li>
             <li>Joseph - 2 and a half years experience as a software developer.</li>
             <li>Tyler - 5 years of experience in data science.</li>
+            <li>Kunle - 9 years of full stack experience.</li>
           </ul>
         </section>
 
