@@ -17,8 +17,8 @@ export default function Home() {
           <h2 className="font-bold">Team Members and Roles:</h2>
           <ul className="list-inside list-disc mb-4">
             <li>Jessica - Data Engineer - Data analytics and data engineering</li>
-            <li>Earth - Back-End Engineer - 3 years FT Engineer.</li>
-            <li>Pranav - Front-End Engineer - Angular, React, JavaScript, Java, Python, C++, HTML; AWS </li>
+            <li>Earth - Back-End Engineer -  Python, SQL, Java, JS, Gen AI Integration</li>
+            <li>Pranav - Front-End Engineer - Angular, React, JavaScript, Java, Python, C++, HTML; AWS</li>
             <li>Joseph - Back-End Engineer - JavaScript, Java, Python, C++, AWS, MySQL</li>
             <li>Kunle - Front-End Engineer - Python, Go, Java, Javascript, React</li>
           </ul>
