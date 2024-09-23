@@ -16,11 +16,11 @@ export default function Home() {
         <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
           <h2 className="font-bold">Team Members and Roles:</h2>
           <ul className="list-inside list-disc mb-4">
-            <li>Jessica - 4 years of professional experience in data analytics and data engineering.</li>
-            <li>Earth - 3 years FT Engineer.</li>
-            <li>Pranav - 2 years FT experience.</li>
-            <li>Joseph - 2 and a half years experience as a software developer.</li>
-            <li>Kunle - 9 years of full stack experience.</li>
+            <li>Jessica - Data Engineer - Data analytics and data engineering</li>
+            <li>Earth - Back-End Engineer - 3 years FT Engineer.</li>
+            <li>Pranav - Front-End Engineer - Angular, React, JavaScript, Java, Python, C++, HTML; AWS </li>
+            <li>Joseph - Back-End Engineer - JavaScript, Java, Python, C++, AWS, MySQL</li>
+            <li>Kunle - Front-End Engineer - Python, Go, Java, Javascript, React</li>
           </ul>
         </section>
 
