@@ -33,24 +33,26 @@ export default function Home() {
         </section>
 
         {/* Lighthouse Scores */}
-        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
-          <h2 className="font-bold">Lighthouse Scores Desktop:</h2>
-          <ul className="list-inside list-decimal">
-            <li>Performance: 94</li>
-            <li>Accessibility: 100</li>
-            <li>Best Practices: 96</li>
-            <li>SEO: 100</li>
-          </ul>
-        </section>
-        <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
-          <h2 className="font-bold">Lighthouse Scores Mobile:</h2>
-          <ul className="list-inside list-decimal">
-            <li>Performance: 77</li>
-            <li>Accessibility: 100</li>
-            <li>Best Practices: 96</li>
-            <li>SEO: 100</li>
-          </ul>
-        </section>
+        <div className="flex">
+          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
+            <h2 className="font-bold">Lighthouse Scores Desktop:</h2>
+            <ul className="list-inside list-decimal">
+              <li>Performance: 94</li>
+              <li>Accessibility: 100</li>
+              <li>Best Practices: 96</li>
+              <li>SEO: 100</li>
+            </ul>
+          </section>
+          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
+            <h2 className="font-bold">Lighthouse Scores Mobile:</h2>
+            <ul className="list-inside list-decimal">
+              <li>Performance: 77</li>
+              <li>Accessibility: 100</li>
+              <li>Best Practices: 96</li>
+              <li>SEO: 100</li>
+            </ul>
+          </section>
+        </div>
       </main>
     </div>
   );
