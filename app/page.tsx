@@ -36,8 +36,9 @@ export default function Home() {
             </p>
           </section>
 
-          {/* Lighthouse Scores */}
-          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
+        {/* Lighthouse Scores */}
+        <div className="flex">
+          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
             <h2 className="font-bold">Lighthouse Scores Desktop:</h2>
             <ul className="list-inside list-decimal">
               <li>Performance: 94</li>
@@ -46,7 +47,7 @@ export default function Home() {
               <li>SEO: 100</li>
             </ul>
           </section>
-          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
+          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
             <h2 className="font-bold">Lighthouse Scores Mobile:</h2>
             <ul className="list-inside list-decimal">
               <li>Performance: 77</li>
