@@ -13,6 +13,14 @@
     border-radius: 8px;
 }
 
+.sticky-header {
+  position: sticky;
+  top: 0;
+  height: 60px;
+  padding: 20px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
 body {
   color: var(--foreground);
   background: var(--background);
