@@ -56,6 +56,7 @@ export default function Home() {
               <li>SEO: 100</li>
             </ul>
           </section>
+          </div>
         </main>
       </div>
     </>
