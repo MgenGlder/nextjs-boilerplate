@@ -53,18 +53,18 @@ export default function Home() {
           <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
             <h2 className="font-bold">Lighthouse Scores Desktop:</h2>
             <ul className="list-inside list-decimal">
-              <li>Performance: 94</li>
+              <li>Performance: 100</li>
               <li>Accessibility: 100</li>
-              <li>Best Practices: 96</li>
+              <li>Best Practices: 100</li>
               <li>SEO: 100</li>
             </ul>
           </section>
           <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
             <h2 className="font-bold">Lighthouse Scores Mobile:</h2>
             <ul className="list-inside list-decimal">
-              <li>Performance: 77</li>
+              <li>Performance: 99</li>
               <li>Accessibility: 100</li>
-              <li>Best Practices: 96</li>
+              <li>Best Practices: 100</li>
               <li>SEO: 100</li>
             </ul>
           </section>
