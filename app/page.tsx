@@ -7,7 +7,6 @@ export default function Home() {
   const [state, setState] = useState(false)
 
   useEffect(function mount() {
-    console.log(window.matchMedia('(max-width: 768px)').matches)
     setState(window.matchMedia('(max-width: 768px)').matches);
   })
 
@@ -16,8 +15,8 @@ export default function Home() {
       <div className="sticky-header">
         <h2>Home</h2>
       </div>
-      <div className={`${state ? '' : 'grid'}grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-10 sm:p-10 font-[family-name:var(--font-geist-sans)]`}>
-        <main className={`${state ? '' : 'flex'} flex-col gap-8 row-start-2 items-center sm:items-start`}>
+      <div className={`${state ? '' : 'grid'} grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-10 sm:p-10 font-[family-name:var(--font-geist-sans)]`}>
+        <main className={`${state ? '' : 'flex'} flex-col items-center gap-8`}>
           <h1><a href="https://github.com/MgenGlder/P2-Solar-Mini-Grid-Design-Optimization">P2 Solar Mini-Grid: Design Optimization</a></h1>
 
           {/* Brief Project Description */}
@@ -49,8 +48,8 @@ export default function Home() {
           </section>
 
         {/* Lighthouse Scores */}
-        <div className="flex">
-          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
+        <div className="flex custom-justify-evenly">
+          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
             <h2 className="font-bold">Lighthouse Scores Desktop:</h2>
             <ul className="list-inside list-decimal">
               <li>Performance: 100</li>
@@ -59,7 +58,7 @@ export default function Home() {
               <li>SEO: 100</li>
             </ul>
           </section>
-          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick m-20">
+          <section className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
             <h2 className="font-bold">Lighthouse Scores Mobile:</h2>
             <ul className="list-inside list-decimal">
               <li>Performance: 99</li>
