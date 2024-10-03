@@ -335,6 +335,7 @@ export default function Home() {
           font-size: 1.1rem;
         }
       }
+        
       `}</style>
     </>
   );
