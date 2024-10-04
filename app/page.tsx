@@ -6,7 +6,7 @@ export default function Home() {
   const [state, setState] = useState(false);
   const [activeTab, setActiveTab] = useState('home');
   const [isLoading, setIsLoading] = useState(false);
-  const [results, setResults] = useState({pvSize: '0', batterySize: '0'});
+  const [results, setResults] = useState({pvSize: '0', batterySize: '0', completed: false});
   
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -15,7 +15,8 @@ export default function Home() {
     setTimeout(() => {
       setResults({
         pvSize: (Math.random() * 80).toFixed(2),
-        batterySize: (Math.random() * 80).toFixed(2)
+        batterySize: (Math.random() * 80).toFixed(2),
+        completed: true
       });
       setIsLoading(false);
     }, 3000);
@@ -107,7 +108,7 @@ export default function Home() {
               <div className="loading-animation">
                 <p>Retrieving results...</p>
               </div>
-            ) : results ? (
+            ) : results.completed ? (
               <div className="results">
                 <p>PV Size = {results.pvSize}</p>
                 <p>Battery Size = {results.batterySize}</p>
