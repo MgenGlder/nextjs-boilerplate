@@ -8,6 +8,12 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [results, setResults] = useState({pvSize: '0', batterySize: '0', completed: false});
   
+  function handleResetSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsLoading(false)
+    setResults({pvSize: '0', batterySize: '0', completed: false})
+  }
+
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setIsLoading(true);
@@ -112,6 +118,9 @@ export default function Home() {
               <div className="results">
                 <p>PV Size = {results.pvSize}</p>
                 <p>Battery Size = {results.batterySize}</p>
+                <form className="reset-form" onSubmit={handleResetSubmit}>
+                  <button type="submit" className="submit-button">Reset</button>
+                </form>
               </div>
             ) : (
               <form className="simulation-form" onSubmit={handleSubmit}>
