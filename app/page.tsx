@@ -1,14 +1,14 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Home() {
   const [state, setState] = useState(false);
   const [activeTab, setActiveTab] = useState('home');
   const [isLoading, setIsLoading] = useState(false);
-  const [results, setResults] = useState(null);
+  const [results, setResults] = useState({pvSize: '0', batterySize: '0'});
   
-  function handleSubmit(event) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setIsLoading(true);
     
@@ -335,6 +335,7 @@ export default function Home() {
           font-size: 1.1rem;
         }
       }
+        
       `}</style>
     </>
   );
