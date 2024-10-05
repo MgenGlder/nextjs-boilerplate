@@ -21,6 +21,19 @@ export default function Home() {
       setIsLoading(false);
     }, 3000);
   }
+  function handleResetB(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsLoading(false);
+    
+    
+      setResults({
+        pvSize: '0',
+        batterySize: '0',
+        completed: false
+      })
+  }
+  
+
   useEffect(function mount() {
     setState(window.matchMedia('(max-width: 768px)').matches);
   }, []);
@@ -112,6 +125,9 @@ export default function Home() {
               <div className="results">
                 <p>PV Size = {results.pvSize}</p>
                 <p>Battery Size = {results.batterySize}</p>
+                <form className="reset-form" onSubmit={handleResetB}>
+                  <button type="submit" className="submit-button">Reset</button>
+                </form>
               </div>
             ) : (
               <form className="simulation-form" onSubmit={handleSubmit}>
@@ -179,6 +195,7 @@ export default function Home() {
         
                 {/* Submit Button */}
                 <button type="submit" className="submit-button">Submit</button>
+                
               </form>
             )}
           </div>
