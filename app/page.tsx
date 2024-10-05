@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from "react";
+import { Tooltip } from "react-tooltip";
 
 export default function Home() {
   const [state, setState] = useState(false);
@@ -115,8 +116,10 @@ export default function Home() {
 
           {activeTab === 'simulation' && (
           <div className="form-container text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] border-thick">
+            <Tooltip id="form-tooltip" />
             <h2>Mini-Grid Simulation Parameters</h2>
-            
+            <p>Note: Hover over the name of the field for more information!</p>
+            <br/>
             {isLoading ? (
               <div className="loading-animation">
                 <p>Retrieving results...</p>
@@ -133,7 +136,9 @@ export default function Home() {
               <form className="simulation-form" onSubmit={handleSubmit}>
                 {/* Name */}
                 <div className="form-group">
-                  <label htmlFor="name">Name</label>
+                  <a data-tooltip-id="form-tooltip" data-tooltip-content="Your first and last name. Ex: John Smith">
+                    <label htmlFor="name">Name</label>
+                  </a>
                   <input
                     type="text"
                     id="name"
@@ -145,7 +150,9 @@ export default function Home() {
         
                 {/* Distribution Length */}
                 <div className="form-group">
-                  <label htmlFor="distributionLength">Distribution Length</label>
+                  <a data-tooltip-id="form-tooltip" data-tooltip-content="The square kilometers of the proposed grid area, as a whole number. Ex: 20">
+                    <label htmlFor="distributionLength">Distribution Length</label>
+                  </a>
                   <input
                     type="number"
                     id="distributionLength"
@@ -157,7 +164,9 @@ export default function Home() {
         
                 {/* Transmission Length */}
                 <div className="form-group">
-                  <label htmlFor="transmissionLength">Transmission Length</label>
+                  <a data-tooltip-id="form-tooltip" data-tooltip-content="The average kilometers distance of the battery to the solar panel, as a whole number. Ex: 20">
+                    <label htmlFor="transmissionLength">Transmission Length</label>
+                  </a>
                   <input
                     type="number"
                     id="transmissionLength"
@@ -169,7 +178,9 @@ export default function Home() {
         
                 {/* Number of Customers */}
                 <div className="form-group">
-                  <label htmlFor="numberOfCustomers">Number of Customers</label>
+                  <a data-tooltip-id="form-tooltip" data-tooltip-content="The number of customers that will utilize the proposed grid, as a whole number. Ex: 500">
+                    <label htmlFor="numberOfCustomers">Number of Customers</label>
+                  </a>
                   <input
                     type="number"
                     id="numberOfCustomers"
@@ -181,7 +192,9 @@ export default function Home() {
         
                 {/* Safety Margin */}
                 <div className="form-group">
-                  <label htmlFor="safetyMargin">Safety Margin (in %)</label>
+                  <a data-tooltip-id="form-tooltip" data-tooltip-content="The safety margin of error of the estimated budget, i.e. how much extra unintended usage to account for. as a whole percentage. Ex. 20">
+                    <label htmlFor="safetyMargin">Safety Margin on entire budge(in %)</label>
+                  </a>
                   <input
                     type="number"
                     id="safetyMargin"
