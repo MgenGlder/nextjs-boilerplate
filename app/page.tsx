@@ -125,7 +125,7 @@ export default function Home() {
               <div className="results">
                 <p>PV Size = {results.pvSize}</p>
                 <p>Battery Size = {results.batterySize}</p>
-                <form className="reset-form" onSubmit={handleResetSubmit}>
+                <form className="reset-form" onSubmit={handleResetB}>
                   <button type="submit" className="submit-button">Reset</button>
                 </form>
               </div>
